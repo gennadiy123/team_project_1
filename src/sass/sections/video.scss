@@ -1,0 +1,130 @@
+.page-3 {
+  background: linear-gradient(to right, #007991, #78ffd6);
+
+  &-icon-apple,
+  &-icon-android {
+    width: 71px;
+    height: 71px;
+    color: #0098cd;
+    background-color: #0098cd;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    display: block;
+  }
+
+  &-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  &-icon-apple {
+    background-image: url(../images/icons/icon-apple.svg);
+    margin-right: 10px;
+  }
+
+  &-icon-android {
+    background-image: url(../images/icons/icon-android.svg);
+    margin-left: 10px;
+  }
+
+  &-text {
+    text-align: center;
+    color: $color_white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.625;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.section-name-video {
+  font-size: 18px;
+  font-family: $raleway__font;
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.window-video {
+  padding-bottom: 60px;
+}
+
+.section-name-video {
+  padding-top: 55px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .window-video {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 105px;
+
+    &-tablet {
+      display: block;
+      width: 500px;
+      height: 305px;
+      text-align: center;
+    }
+  }
+
+  .page-3 {
+    height: auto;
+
+    &-text {
+      margin-bottom: 24px;
+    }
+
+    &-icons {
+      margin-bottom: 58px;
+    }
+  }
+
+  .section-name-video {
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-name-video {
+    font-weight: 700;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  .page-3-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+  }
+
+  .page-3-text {
+    display: block;
+    width: 560px;
+    text-align: left;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    line-height: 1.625;
+  }
+
+  .page-3-icons {
+    justify-content: left;
+  }
+
+  .page-3-list-desctop-left {
+    padding-top: 33px;
+  }
+  
+  .window-video {
+    margin: 0;
+    padding-bottom: 75px;
+  }
+}
